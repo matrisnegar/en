@@ -309,6 +309,26 @@ window.matrisPriceText = function (key, selectedLanguage) {
   outline:3px solid #ffce45;outline-offset:3px;
 }
 </style>
+<style id="matris-mobile-price-refinement">
+@media (max-width:700px) {
+  /* Relative width weights: product x1.2, other columns x0.8;
+     normalized to keep the complete table within 100%. */
+  .module-pricing table { table-layout:fixed; }
+  .module-pricing thead tr:first-child > :first-child { inline-size:42.4893%; }
+  .module-pricing thead tr:first-child > :last-child { inline-size:29.1845%; }
+  .module-pricing thead tr:first-child > :first-child:nth-last-child(2) { inline-size:74.4361%; }
+  .module-pricing thead tr:first-child > :nth-child(2):last-child { inline-size:25.5639%; }
+  .module-pricing thead tr:first-child > :first-child:nth-last-child(4) { inline-size:29.7297%; }
+  .module-pricing thead tr:first-child > :nth-child(4):last-child { inline-size:30.6306%; }
+  .module-pricing tfoot td,
+  .module-pricing tfoot th:last-child { font-size:16.8px !important; }
+  .module-pricing .bundle-total td,
+  .module-pricing .bundle-total th:last-child { font-size:12.25px !important; }
+  .module-pricing tfoot td bdi,
+  .module-pricing tfoot th:last-child bdi,
+  .module-pricing .bundle-total td bdi { font-size:inherit !important; }
+}
+</style>
 </head><body><a class="skip-link" href="#main">رفتن به محتوای اصلی</a><div id="app"></div><noscript><main><h1>داده نگار ماتریس — سورس‌کد نرم‌افزارهای سازمانی</h1><p>برای مشاهده محصولات، JavaScript را فعال کنید. برای خرید سورس‌کد و آموزش برنامه‌نویسان با info@matrisoft.top تماس بگیرید.</p></main></noscript><script>window.SITE_CONTENT = {
   "demo": false,
   "name": "MatriSoft",
